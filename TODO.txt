@@ -1,0 +1,6 @@
+Create global css.
+Create 404 page.
+Disable select parcel button during parcel load.
+Create feature to select parcels and see details.
+Loading popup should close on request failure.
+Refactor services files, create json to parcels mapper.
