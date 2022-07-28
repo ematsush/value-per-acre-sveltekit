@@ -2,11 +2,11 @@ import { Collection, MongoClient } from "mongodb";
 
 let uri = "mongodb://0.0.0.0:27017/";
 
-if (process && process.env.DB_URL) {
+if (process && process.env.DATABASE_URL) {
     const username = process.env.DB_USR;
     const password = process.env.DB_PWD;
 
-    uri = `mongodb+srv://${username}:${password}@${process.env.DB_URL}`;
+    uri = process.env.DATABASE_URL;
 }
 
 const client = new MongoClient(uri);
