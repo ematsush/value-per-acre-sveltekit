@@ -28,7 +28,9 @@
 	<div id="city-picker">
 		<ul>
 			{#each cities as city}
-				<Link href={`/map/${city.id}`}>{city.name}, {city.state}</Link>
+				<li>
+					<Link href={`/map/${city.id}`}>{city.name}, {city.state}</Link>
+				</li>
 			{/each}
 		</ul>
 	</div>
